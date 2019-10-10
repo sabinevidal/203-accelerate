@@ -12,7 +12,7 @@
 // Enqueue scripts and styles
 function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+  wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
@@ -41,6 +41,7 @@ add_action( 'init', 'create_custom_post_types' );
  * This will add your Font Awesome Kit to the front-end, the admin back-end,
  * and the login screen area.
  */
+
 if (! function_exists('fa_custom_setup_kit') ) {
     function fa_custom_setup_kit($kit_url = '') {
       foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
@@ -54,3 +55,4 @@ if (! function_exists('fa_custom_setup_kit') ) {
     }
   }
 fa_custom_setup_kit('https://kit.fontawesome.com/e4ef0962fa.js');
+
