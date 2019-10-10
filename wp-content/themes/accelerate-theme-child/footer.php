@@ -20,8 +20,10 @@
 				</div>
 
 				<nav class="social-media-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'menu_class' => 'social-media-menu' ) ); ?>
-				</nav>
+					<?php if (has_nav_menu('social-media')): ?> 
+						<?php wp_nav_menu( array( 'theme_location' => 'social-media', 'link_before' =>'<span class="screen-reader-text">','link_after'=>'</span>','menu_class' => 'social-media-menu' ) ); ?>
+					<?php endif;?> 
+					</nav>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 
