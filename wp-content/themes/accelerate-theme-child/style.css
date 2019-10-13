@@ -184,6 +184,141 @@ ul.social-media-menu li {
 
 /* End FOOTER */ 
 
+/* CONTACT PAGE */
+.nf-form-content label {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.contact label {
+    font-weight: 400;
+    font-size: 1em;
+}
+.contact .site-content {
+    max-width: 650px;
+
+}
+
+.contact.main-content h2 {
+    font-size: 1.5em;
+}
+
+.contact button {
+    color: #45ac9d;
+}
+
+#nf-field-4 {
+    background-color: #45ac9d;
+    text-transform: capitalize;
+    float: right;
+}
+
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+    font-weight: 400;
+}
+
+/* End CONTACT PAGE */
+
+/* ABOUT */
+
+.hero-content { 
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 1em;
+    padding: 6em 0;
+}
+.about-hero h6 {
+    width: 50%;
+    text-align: center;
+    font: 600 1.4em/1.65 'Open Sans', Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: auto;
+    padding: 0 1em;
+    color: #fff;
+}
+.services-header h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.services-header p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.about-page .main-content {
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+ul.about-page-services {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+}
+
+.about-page-services li {
+    list-style: none;
+    margin: auto;
+}
+
+div .service-container {
+    width: 85%;
+    display: flex;
+    margin: 2em auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+}
+.about-text h2 {
+    font: 500 1.45em/1.75 'Open Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+figure.service-image {
+    justify-content: flex-end;
+}
+
+
+.about-contact {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    padding: 3.5em 8em 2em;
+    border-top: 1px solid #909090; ;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+
+}
+
+.about-contact h2 {
+    display: flex;
+    margin: 0;
+    padding: 0 1em;
+}
+
+.about-contact a {
+    display: flex;
+    margin: 0 1em;
+
+}
+
+/* End ABOUT */
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

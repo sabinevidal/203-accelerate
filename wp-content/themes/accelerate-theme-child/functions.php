@@ -13,6 +13,7 @@
 function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+  
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
@@ -32,8 +33,21 @@ function create_custom_post_types() {
 }
 add_action( 'init', 'create_custom_post_types' );
 
-
-
+// CUSTOM SERVICES POST
+function create_services_offered() {
+  register_post_type( 'services-offered',
+      array(
+          'labels' => array(
+              'name' => __( 'Services Offered' ),
+              'singular_name' => __( 'Service Offered' )
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'rewrite' => array( 'slug' => 'services' ),
+      )
+  );
+}
+add_action( 'init', 'create_services_offered' );
 
 /**
  * Font Awesome Kit Setup
@@ -55,4 +69,17 @@ if (! function_exists('fa_custom_setup_kit') ) {
     }
   }
 fa_custom_setup_kit('https://kit.fontawesome.com/e4ef0962fa.js');
+
+
+add_filter( 'body_class','accelerate_child_body_classes' );
+function accelerate_child_body_classes( $classes ) {
+
+
+  if (is_page('contact-us') ) {
+    $classes[] = 'contact';
+  }
+    
+    return $classes;
+     
+}
 
