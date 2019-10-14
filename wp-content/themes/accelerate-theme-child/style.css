@@ -29,7 +29,7 @@ Text Domain:  accelerate-theme-child
     color: #a6a6a6;
     text-transform: uppercase;
     margin: 2em 0 .5em;
-    overflow: clear;
+ 
 }
 
 
@@ -64,6 +64,14 @@ Text Domain:  accelerate-theme-child
     padding: 1em 3.75em;
     text-align: center;
 }
+
+.hero-content h1 {
+    font-family: 'Open Sans', Arial, sans-serif; 
+}
+.hero-content h3 {
+    font: 700 1.4em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif; 
+}
+
 /*homepage featured work*/
 
 .featured-work .site-content {
@@ -325,6 +333,61 @@ div.service-image {
 
 /* End ABOUT */
 
+/* 404 PAGE */
+
+body.error404.vsc-initialized ,body.error404 {
+    background: url("img/space.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lost-content-area {
+    margin-bottom: 5em;
+    display: flex;
+}
+.lost-content-area h1 {
+    font-size: 4em;
+    color: white;
+    font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    margin: 0.5em;
+    text-shadow: 5px 5px #45ac9d;
+}
+
+div.lost-text {
+    background-color: rgba(240, 240, 240, 0.8);
+    padding: 1.5em;
+    margin-bottom: 3em;
+    width: 45%;
+    margin-left: 20em;
+    border-radius: 25px;
+}
+
+.lost-text p {
+    margin: 0;
+    color: #3b3b3b;
+    text-align: center;
+    font-family: 'Contrail One', cursive;
+}
+
+.lost-content-area .button {
+    margin-left: 25em;
+    margin-bottom: 3em;
+    background-color: #3b3b3b;
+}
+
+.site-footer {
+    flex-shrink: 0;
+    margin-bottom: 2em;
+  }
+  body.error404.vsc-initialized ,body.error404 .site-footer p {
+      color: white;
+  }
+
+
+/* End 404 PAGE */
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

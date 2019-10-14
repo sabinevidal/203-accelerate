@@ -10,7 +10,7 @@
 get_header(); ?>
 
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="lost-content-area">
 		<div id="content" class="site-content" role="main">
 
 			<header class="page-header">
@@ -18,11 +18,11 @@ get_header(); ?>
 			</header>
 
 			<div class="page-content">
-                <p> looks like you took a wrong turn somewhere.</p>
-                <p> Why don't you turn around and head back to solid ground?</p>
-                <a class="button" href="<?php echo site_url('/case-studies/') ?>">Solid Ground</a>
-
-				
+				<div class="lost-text">
+					<p> Looks like you took a wrong turn somewhere.</p>
+					<p> Why don't you head back to solid ground?</p>
+				</div>
+                <a class="button" href="<?php echo site_url('/case-studies/') ?>">Solid Ground</a>	
 			</div><!-- .page-content -->
 
 		</div><!-- #content -->
