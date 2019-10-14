@@ -35,7 +35,7 @@ get_header(); ?>
 				?>
 				<li class="individual-service">
 					<div class="service-container">
-					<figure class="service-image"><?php echo wp_get_attachment_image($image, $size); ?></figure>
+					<div class="service-image"><?php echo wp_get_attachment_image($image, $size); ?></div>
 						<div class="about-text">
 							<h2><?php the_title(); ?></h2>
 							<p><?php echo $description ?></p>

@@ -269,6 +269,9 @@ ul.about-page-services {
     margin: auto;
 }
 
+.individual-service {
+    display: flex;
+}
 div .service-container {
     width: 85%;
     display: flex;
@@ -288,10 +291,13 @@ div .service-container {
     margin: 0;
 }
 
-figure.service-image {
+div.service-image {
     justify-content: flex-end;
 }
 
+.individual-service:nth-child(even) .service-container {
+    flex-direction: row-reverse;
+}
 
 .about-contact {
     display: flex;
