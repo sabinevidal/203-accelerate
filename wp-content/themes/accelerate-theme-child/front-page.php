@@ -62,13 +62,18 @@ get_header(); ?>
 
 	<!-- TWITTER FEED -->
 	<section class="twitter-feed">
-		<h4>Recent Tweet</h4>
-	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div id="secondary" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		<div class="site-content">
+		<div class="tweet-feed">
+			<h4>Recent Tweet</h4>
+			<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+				<h2 class="twitterlink"><a href="http://twitter.com/sabinevidal">Follow Us ›</a></h2>
+			<?php endif; ?>
 		</div>
-	<?php endif; ?>
-</section>
+		</div>
+	</section>
 	
 
 <?php get_footer(); ?>

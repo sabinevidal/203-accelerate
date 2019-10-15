@@ -24,7 +24,7 @@ Text Domain:  accelerate-theme-child
 	float: left;
 	margin-bottom: 2em;
 }
-.blog-post h4 {
+.blog-post h4, .tweet-feed h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
@@ -34,16 +34,22 @@ Text Domain:  accelerate-theme-child
 
 
 .blog-post h3 {
-	font-size: 1.5em;
+    font-size: 1.5em;
+    margin-top: 1em;
 }
 
 .read-more-link {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
 	font-weight: 700;
 	color: #45ac9d;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    padding-top:1em;
 }
 
+.mc4wp-form-fields input[type="submit"] {
+    background-color: #45ac9d;
+    font: 700 1em/0.5 'Montserrat', 'OpenSans', Arial, sans-serif;
+}
 
 /* end blog styles */ 
 
@@ -72,6 +78,47 @@ Text Domain:  accelerate-theme-child
     font: 700 1.4em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif; 
 }
 
+.tweet-feed {
+    width: 40%;
+    float: left;
+    margin-bottom: 2em;
+    margin-left: 10%;
+}
+
+.ctf-tweet-text p {
+    margin: 1em auto;
+}
+
+#ctf .ctf-screename-sep, #ctf .ctf-author-name {
+    display: none;
+  }
+  
+#ctf.ctf-styles .ctf-author-screenname {
+    margin-bottom: .5em;
+    font: 700 1.5em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 1.5em;
+
+}
+
+/*#ctf.ctf-styles .ctf-twitterlink {
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	color: rgb(69, 172, 157);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1em;
+  }*/
+
+  h2.twitterlink {
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	color: rgb(69, 172, 157);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1em;
+    margin: 0;
+  }
+
 /*homepage featured work*/
 
 .featured-work .site-content {
@@ -91,7 +138,7 @@ Text Domain:  accelerate-theme-child
     width: 100%;
 }
 .individual-featured-work {
-    margin: 0 0.5em 2em 0.5em; 
+    margin: 0 0.5em 5em 0.5em; 
     display: block;
     float: left;
 }
