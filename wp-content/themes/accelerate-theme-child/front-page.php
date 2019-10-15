@@ -44,6 +44,27 @@ get_header(); ?>
 		</div>
 	</section>
 
+	<section class="featured-services">
+		<div class="site-content">
+			<h4>Our Services</h4>
+			<ul class="homepage-featured-services">
+				<?php query_posts('posts_per_page=4&post_type=services_offered'); ?>
+				<?php while ( have_posts() ) : the_post(); 
+					$image = get_field("image");
+					$size = "medium";
+				?>
+				<li class="individual-featured-services">
+					<figure>
+					<?php echo wp_get_attachment_image($image, $size); ?>
+					</figure> 
+					<h3><?php the_title(); ?></h3>
+				</li>
+				<?php endwhile; ?>
+					<?php wp_reset_query(); ?>  
+			</ul>
+		</div>
+	</section>
+
 
 	<!-- RECENT BLOG POST --> 
 	<section class="recent-posts">

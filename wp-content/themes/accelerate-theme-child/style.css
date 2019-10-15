@@ -143,6 +143,30 @@ Text Domain:  accelerate-theme-child
     float: left;
 }
 
+/*homepage featured services*/
+
+.featured-services .site-content {
+    margin: 6em auto;
+}
+
+section.featured-services h4{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.25em; 
+}
+.homepage-featured-services {
+    list-style: none; 
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.individual-featured-services {
+    margin: 0 0.5em 5em 0.5em; 
+    display: block;
+    float: left;
+}
+
 /* Case Studies */
 
 .case-study {
